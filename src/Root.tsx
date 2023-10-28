@@ -47,7 +47,7 @@ export const EEContextPortalRoot: React.FC< EEContextPortalRootProps > = React.m
       }
       {
         // eslint-disable-next-line react/jsx-props-no-spreading
-        portals.map( ( { Comp, id, props } ) => ( <Comp key={ id } { ...props } /> ) )
+        portals.map( ( { Comp, id, props } ) => ( <Comp key={ id } props={ props } /> ) )
       }
     </>
   );

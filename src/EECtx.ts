@@ -42,7 +42,7 @@ export type Props = Record< string, any >;
 export type WithProps = {
   props: Props[];
 };
-export type PortalComp = React.ComponentType< Props >;
+export type PortalComp = React.ComponentType< WithProps >;
 
 
 export type State = {
